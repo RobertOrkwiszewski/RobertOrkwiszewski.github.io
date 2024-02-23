@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PersonalWebsite</title>
+  <link type="text/css" rel="stylesheet" href="./über.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" />
+</head>
+
+
+<body>
+
+
+  <div id="Übackground">
+
+    <!--header begin-->
+
+    <div class="Hheader Tscroll">
+      
+      <div id="Hfirstholder"></div>
+      <button id="BHbeginner" onclick="scrollToAbout()"> <p class="Htext Hbeginner">Beginner Full-Stack-Developer</p> </button>
+      <div id="Hsecondholder"></div>
+      <button id="BHziele" onclick="scrollToZiele()"> <p class="Htext Hziele">Ziele</p> </button>
+      <button id="BHkenntnisse" onclick="scrollToKenntnisse()"> <p class="Htext Hkenntnisse">Kenntnisse</p> </button>
+      <button id="BHkontakt" onclick="scrollToKontakt()"> <p class="Htext Hkontakt">Kontakt</p> </button>
+      <div id="Hthirdholder"></div>
+
+    </div>
+
+    <div class="Theader Ttoggle">
+    
+      <div id="Tmenuspace"></div>
+      <button class="BTtoggle" id="BTbeginner" onclick="scrollToAbout()"> <p class="Htext Tbeginner">Beginner Full-Stack-Developer</p> </button>
+      <button class="BTtoggle" id="BTziele" onclick="scrollToZiele()"> <p class="Htext Tziele">Ziele</p> </button>
+      <button class="BTtoggle" id="BTkenntnisse" onclick="scrollToKenntnisse()"> <p class="Htext Tkenntnisse">Kenntnisse</p> </button>
+      <button class="BTtoggle" id="BTkontakt" onclick="scrollToKontakt()"> <p class="Htext Tkontakt">Kontakt</p> </button>
+    
+    </div>
+
+    <button id="BTmenu" class="Tscroll"> <img id="Tmenu" src="./über/menu-offnen.png"> </button>
+    
+    <!--header end-->
+
+    <!--über2 begin-->
+
+    <svg id="Ü1circle" xmlns="http://www.w3.org/2000/svg" width="653" height="413" viewBox="0 0 653 413" fill="none">
+      <path
+        d="M417.594 -226.062C274.594 -43.2861 876.094 119.163 559.094 324.163C324.094 457.789 -514.341 454.438 -384.406 210.938C-257.406 -27.0616 -45.8302 137.615 -206.906 -383.562C-302.406 -692.562 603.36 -463.499 417.594 -226.062Z"
+        fill="#B2AEAE" />
+      <path
+        d="M417.594 -226.062C274.594 -43.2861 876.094 119.163 559.094 324.163C324.094 457.789 -514.341 454.438 -384.406 210.938C-257.406 -27.0616 -45.8302 137.615 -206.906 -383.562C-302.406 -692.562 603.36 -463.499 417.594 -226.062Z"
+        fill="#B2AEAE" />
+    </svg>
+
+    <p class="title" id="Ühier">Hallo, <br> Hier ist <span id="ÜShier">Robert</span></p>
+    <p class="Ütext" id="Üvorstell">Ich <span class="ÜSvorstell">lerne programmieren</span> in meiner <span class="ÜSvorstell">Freizeit</span> und ziele sehr auf eine Stelle in der Ausbildung als Fachinformatiker für
+    Anwendungsentwicklung ab. Da ich noch vor habe, meine <span class="ÜSvorstell">eigene App zu programmieren</span> und <span class="ÜSvorstell">genaueres in dem Bereich
+    programmieren zu lernen</span>.
+    Ich habe schon ein <span class="ÜSvorstell">paar Kenntnisse</span> und noch <span class="ÜSvorstell">einige  Ziele</span> vor mir.</p>
+    <div id="Üfragen">
+    <button id="ÜBfragen" onclick="scrollToFragen()"> <p class="Ütext" id="ÜTfragen">Noch Fragen?</p> </button>
+    </div>
+    
+    <div id="ÜFlex">
+      <div id="ÜFholder"></div>
+      <img id="ÜFcircle" src="./über/circles.png" alt="It's me!">
+    </div>
+
+  </div>
+
+  <!--über end-->
+  
+  <!--ziele begin-->
+
+  <div id="Zbackground">
+
+    <p class="title Zmeineziele">Meine Ziele</p>
+    <div id="ZoutFlex">
+     <div id="ZFlex">
+      <img id="Z1circle" src="./über/Z1circle.png">
+      <div id="ZFholder"></div>
+      <img id="Z2circle" src="./über/Z2circle.png">
+    </div></div>
+  
+    <div id="Zziele">
+
+      <div class="Zouterspace"></div>
+      <div class="Zzielkarten">
+        <img class="Zzielbilder" src="./über/Zmobileapp.png">
+        <p class="title Zzieletitel">Mobile App</p>
+        <p class="Ütext Zzieletext">Ich arbeite an einer Social-Media App, ein größeres Projekt, welches mein Endziel ist.</p>
+      </div>
+      <div class="Zmidspace"></div>
+      <div class="Zzielkarten">
+        <img class="Zzielbilder" src="./über/Zfullstack.png">
+        <p class="title Zzieletitel">Full-Stack</p>
+        <p class="Ütext Zzieletext">Ich strebe nach Kenntnissen im Bereich Front- und Back-End,Datenbanken aber auch in Swift und Kotlin oder ähnlichem für
+        meine App.</p>
+      </div>
+      <div class="Zmidspace"></div>
+      <div class="Zzielkarten">
+        <img class="Zzielbilder" src="./über/Zdesign.png">
+        <p class="title Zzieletitel">Design</p>
+        <p class="Ütext Zzieletext">In meinem Lebenslauf und meiner Website ist ein Teil meiner Kenntnisse in Canva und Figma abgebildet.</p>
+      </div>
+      <div class="Zouterspace"></div> 
+
+    </div>
+
+  </div>
+
+  <!--ziele end-->
+
+  <!--kenntnisse begin-->
+
+  <div id="Kbackground">
+
+    <div id="Kcirclesbg">
+      <img src="./über/Kcircles.png">
+      <p class="title Kmeinekenntnisse">Meine Kenntnisse</p>
+      <p class="Ütext" id="Kkenntnistext">Eigentlich habe ich Lust, alles zu lernen, aber mal gucken, was mir noch in den
+        Weg kommt.</p>
+    </div>
+
+    <div class="Kkenntnisse" id="Kscroll">
+
+      <div class="Kkarten">
+        <p class="title KKtexts KLdesign">Design</p>
+        <p class="Ütext KKlongtexts KLlongtexts">Ein Teil meiner Designing Skills sind auf dieser Website und dem Lebenslauf zu sehen.</p>
+        <img class="KLimages" src="./über/Kkartendesign.png" alt="Design Skills">
+      </div>
+
+      <div class="Kkarten KRkarten">
+        <p class="title KKtexts KRfigma">Figma</p>
+        <p class="Ütext KKlongtexts KRlongtexts">Ich habe diese Website mit Figma erstellt und lerne noch weiter für meine Projekte.</p>
+        <img class="KRimages" src="./über/Kkartenfigma.png" alt="Figma Skills">
+      </div>
+
+      <div class="Kkarten">
+        <p class="title KKtexts KLhtml">HTML</p>
+        <p class="Ütext KKlongtexts KLlongtexts">Ich mache gerade ein Webdevelopment-Kurs, bei dem ich schon mit HTML und CSS fertig bin und gerade bei JavaScript bin.</p>
+        <img class="KLimages" src="./über/Kkartenhtml.png" alt="HTML Skills">
+      </div>
+
+      <div class="Kkarten KRkarten">
+        <p class="title KKtexts KRcss">CSS</p>
+        <p class="Ütext KKlongtexts KRlongtexts">Die Basics von CSS weiß ich schon, ich verfeiner gerade meine Skills.</p>
+        <img class="KRimages" src="./über/Kkartencss.png" alt="CSS Skills">
+      </div>
+
+      <div class="Kkarten">
+        <p class="title KKtexts KLvscode">VS Code</p>
+        <p class="Ütext KKlongtexts KLlongtexts">Ich kenne mich mit VS Code, Android Studio und mit Kotlin aus.</p>
+        <img class="KLimages" src="./über/Kkartenvscode.png" alt="VsCode Skills">
+      </div>
+
+      <div class="Kkarten KRkarten">
+        <p class="title KKtexts KRjavascr">JavaScript</p>
+        <p class="Ütext KKlongtexts KRlongtexts">Bisher leichte JavaScript Kenntnisse, aber priorität ist zurzeit meine App.</p>
+        <img class="KRimages" src="./über/Kkartenjavascr.png" alt="JavaScript Skills">
+      </div>
+
+    </div>
+
+    <div id="Kcirclesbg2">
+      <img id="Kkenntnisimg" src="./über/Kcirclemail.png">
+      <p class="Ütext KTkenntnisfragen">Du hast noch irgendwelche Fragen, du willst mit mir zusammen arbeiten oder genaueres über mich erfahren? Dann drück
+      den Button und schreibe direkt an mich!</p>
+
+      <div id="Kmailmirbg">
+        <a href="mailto:robert.orkwiszewski.private@gmail.com">
+          <button id="KBmailmir">
+            <img src="./über/Kcirclemail2.png" alt="Mail mir!"><p class="Ütext KTmailmir">Mail mir!</p>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div id="Kcircles2holder"></div>
+
+  </div>
+
+  <!--kenntnisse end-->
+
+  <div id="Xbackground">
+
+    <p class="title Xkontakt">Kontaktiere mich!</p>
+
+    <div id="Xtelefon">
+      <img id="Xtelefonimg" src="./über/Xtelefon.png">
+      <p class="Ütext XKtext">-0178 1107562</p>
+    </div>
+
+    <div id="Xmail">
+      <img id="Xmailimg" src="./über/Xmail.png">
+      <p class="Ütext XKtext" id="Xshrinkemail">-robert2301orkwiszewski@gmail.com</p>
+    </div>
+
+    <div id="Xkontaktpossi">
+      <p class="Ütext XkontaktAt" id="XshrinkAt">@nurfüreigeneZweckeNichtweitergeben:)</p>
+      <div id="Xkontaktholder"></div>
+      <img id="Xkontaktmailimg" src="./über/Xmail.png">
+      <img id="Xkontakttelimg" src="./über/Xtelefon.png">
+      <img id="Xkontaktwhatsappimg" src="./über/Xwhatsapp.png">
+    </div>
+
+  </div>
+
+
+
+  <!--bootstrap begin-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!--bootstrap end-->
+
+
+  <!--javascript begin-->
+  <script>
+
+
+    //headertoggle begin
+
+    document.getElementById('BTmenu').addEventListener('click', function () {
+      var header = document.querySelectorAll('.Ttoggle');
+        
+      header.forEach(function (headers) {
+      headers.classList.toggle('Htoggle')
+      });
+    });
+
+    //headertoggle end
+
+
+    //headerdappearscroll begin
+
+  var elements = document.querySelectorAll('.Tscroll');
+  var lastScrollPosition = window.pageYOffset;
+
+  function handleScroll() {
+    var currentScrollPosition = window.pageYOffset;
+
+    var isHToggleActive = document.querySelector('.Ttoggle').classList.contains('Htoggle');
+
+    if (currentScrollPosition > lastScrollPosition && !isHToggleActive) {
+      // Scrolling down and other flex is translated to translateY(-100%)
+      elements.forEach(function (element) {
+        element.classList.add('hidden');
+        element.classList.remove('visible');
+      });
+    } else {
+      // Scrolling up or other flex is not translated to translateY(-100%)
+      elements.forEach(function (element) {
+        element.classList.remove('hidden');
+        element.classList.add('visible');
+      });
+    }
+
+    lastScrollPosition = currentScrollPosition;
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
+    //headerdappearscroll end
+
+
+    //scrolltoabout begin
+  function scrollToAbout() {
+    
+    const targetAbout = 0;
+
+    // Use the scrollTo method to scroll to the specified position
+    window.scrollTo({
+      top: targetAbout,
+      behavior: 'smooth'
+    });
+  }
+    //scrolltoabout end
+
+
+    //scrolltoziele begin
+  function scrollToZiele() {
+    
+    const targetZieleDiv = document.getElementById('Zbackground');
+    const targetZiele = targetZieleDiv.offsetTop;
+
+    // Use the scrollTo method to scroll to the specified position
+    window.scrollTo({
+      top: targetZiele,
+      behavior: 'smooth'
+    });
+  }
+    //scrolltoziele end
+
+
+    //scrolltokenntnisse begin
+  function scrollToKenntnisse() {
+    
+    const targetKenntnisseDiv = document.getElementById('Kbackground');
+    const targetKenntnisse = targetKenntnisseDiv.offsetTop;
+
+    // Use the scrollTo method to scroll to the specified position
+    window.scrollTo({
+      top: targetKenntnisse,
+      behavior: 'smooth'
+    });
+  }
+    //scrolltokenntnisse end
+
+
+    //scrolltokenntnisse begin
+  function scrollToKontakt() {
+    
+    const targetKontaktDiv = document.getElementById('Xbackground');
+    const targetKontakt = targetKontaktDiv.offsetTop;
+
+    // Use the scrollTo method to scroll to the specified position
+    window.scrollTo({
+      top: targetKontakt,
+      behavior: 'smooth'
+    });
+  }
+    //scrolltokenntnisse end
+
+
+    //scrolltokenntnisse begin
+  function scrollToFragen() {
+    
+    const targetFragenDiv = document.getElementById('Kbackground');
+    const targetFragen = targetFragenDiv.offsetTop;
+
+    // Use the scrollTo method to scroll to the specified position
+    window.scrollTo({
+      top: targetFragen,
+      behavior: 'smooth'
+    });
+  }
+    //scrolltokenntnisse end
+
+
+    //kontacttextfitter begin
+
+  const Xemail = document.getElementById('Xshrinkemail');
+  const Xkontakt = document.getElementById('XshrinkAt');
+
+  // Check the screen width and update the text content
+  function updateText() {
+    if (window.innerWidth < 642) {
+      Xemail.textContent = "-robert2301orkwis zewski@gmail.com";
+      Xkontakt.textContent = "@nurfüreigeneZwecke Nichtweitergeben:)";
+    } else {
+      Xemail.textContent = "-robert2301orkwiszewski@gmail.com";
+      Xkontakt.textContent = "@nurfüreigeneZweckeNichtweitergeben:)";
+    }
+  }
+
+  // Call the function initially and add an event listener for window resize
+  updateText();
+  window.addEventListener('resize', updateText);
+
+    //kontacttextfitter end
+
+
+  </script>
+  <!--javascript end-->
+
+</body>
+</html>

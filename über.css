@@ -1,0 +1,755 @@
+body{
+    margin: 0;
+    background-color: #F3F3F3;
+}
+
+/*über begin*/
+
+#Übackground{
+    width: 100%;
+    height: 1024px;
+    background-color: #F3F3F3;
+    position: relative;
+}
+
+/*header begin*/
+
+.Htext {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #333;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.Hheader button, .Theader button, #BTmenu{
+    border: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+
+
+@media (min-width: 1151px) {
+
+    /*headers begin*/
+    .Theader{
+        display: none;
+    }
+    .Hheader{
+        display: flex;
+        position: fixed;
+        transition: ease 1s;
+        width: 100%;
+        z-index: 4;
+    }
+    /*headers end*/
+
+    /*holder begin*/
+    #Hfirstholder{
+        width: 91px;
+    }
+    #Hsecondholder {
+        width: 0px;
+        display: flex;
+        flex-grow: 1;
+    }
+    #Hthirdholder {
+        width: 91px;
+    }
+    /*holder end*/
+
+    /*buttons begin*/
+    #BHkenntnisse, #BHziele {
+        margin-right: 60px;
+    }
+    
+    #BTmenu {
+        display: none;
+    }
+    /*buttons end*/
+
+    /*texts begin*/
+    .Hbeginner{
+        color: #074c75;
+    }
+    /*texts end*/
+}
+
+
+
+@media (max-width: 1151px) {
+
+    /*headers begin*/
+    .Theader {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        background-color: #b2aeae;
+        width: 100%;
+        z-index: 4;
+
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: ease 2s;
+    }
+    .Hheader{
+        display: none;
+    }
+    /*headers end*/
+
+    /*menu begin*/
+    #Tmenuspace{
+        height: 134.4px;
+        width: 100%;
+    }
+    #Tmenu{
+        height: 34.4px;
+        width: 34.4px;
+    }
+    #BTmenu{
+        position: fixed;
+        transition: transform 0.5s ease-in-out;
+        z-index: 4;
+        height: 34px;
+        width: 34px;
+        padding: 50px 50px 50px 91px;
+    }
+    #BTmenu:hover{
+        transform: rotate(180deg) translateX(-50%) translatey(-40%);
+    }
+    /*menu end*/
+
+    /*buttons begin*/
+    #BTbeginner, #BTziele, #BTkenntnisse, #BTkontakt{
+        margin-left: 91px;
+    }
+        
+    /*buttons end*/
+    
+    /*texts begin*/
+    .Htext{
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    /*texts end*/
+
+    /*toggle begin*/
+    .Theader.Htoggle{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    /*toggle end*/
+}
+#placeholder{
+    width: 100%;
+    height: 100px;
+}
+
+/*scrollanim begin*/
+.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+/*scrollanim end*/
+
+/*header end*/
+
+
+
+/*über begin*/
+
+/*stylesForAll begin*/
+.title{
+    color: #333;
+    font-family: Lalezar, Arial;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px;
+}
+.Ütext{
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+/*stylesForAll end*/
+
+/*styles begin*/
+#Üvorstell{
+    color: #333333;
+}
+.ÜSvorstell{
+    color: #3B96D3;
+}
+#ÜShier{
+    color: #E7C720;
+}
+#Ühier{
+    position: absolute;
+    top: 200px;
+    left: 91px;
+}
+#ÜTfragen{
+    margin: 14.5px 30.5px 14.5px 30.5px;
+    color: #F3F3F3;
+}
+#Üfragen{
+    display: flex;
+}
+#ÜBfragen{
+    z-index: 4;
+    border: 0;
+    border-radius: 14px;
+    background-color: #E7C720;
+}
+
+@media (max-width: 653px) {
+    #Ü1circle{
+        width: 100%;
+    }
+    #Ühier {
+        top: 110px;
+    }
+}
+/*styles end*/
+
+@media (min-width: 1151px) {
+    #Üvorstell{
+        width: 558px;
+        height: 341px;
+        margin-left: 91px;
+        margin-top: 89px;
+    }
+    #ÜBfragen {
+        margin-left: 91px;
+        margin-top: 39px;
+    }
+
+    /*circleFlex begin*/
+    #ÜFlex{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 1024px;
+        top: 0px;
+        overflow: hidden;
+    }
+    #ÜFholder{
+        z-index: 1;
+        width: 450px;
+        height: 1024px;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    #ÜFcircle{
+        margin-top: 227px;
+        flex-shrink: 0;
+    }
+
+    /*circleFlex end*/
+}
+
+
+
+@media (max-width: 1151px) {
+    /*styles begin*/
+    #Übackground {
+        display: inline-block;
+        height: auto;
+    }
+    #Üvorstell{
+        margin-top: 60px;
+        margin-left: 30px;
+        margin-right: 40px;
+        text-align: center;
+    }
+    #Üfragen{
+        display: flex;
+        justify-content: center;
+    }
+    #ÜBfragen {
+        margin-top: 20px;
+    }
+    /*styles end*/
+
+    /*circleFlex begin*/
+    #ÜFlex{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    #ÜFcircle{
+        width: 100%;
+    }
+    /*circleFlex end*/
+}
+
+/*über end*/
+
+
+
+/*ziele begin*/
+
+/*styles begin*/
+#Zbackground{
+    width: 100%;
+    height: 1024px;
+    background-color: #EEEEEE;
+    position: relative;
+}
+.Zmeineziele{
+    padding-top: 115px;
+    text-align: center;
+}
+#Z2circle{
+    width: 850px;
+}
+#Z1circle{
+    width: 415px;
+}
+/*styles end*/
+
+/*cardsstyles begin*/
+.Zzielkarten{
+    z-index: 2;
+    width: 350px;
+    height: 530px;
+    border-radius: 40px;
+    background: linear-gradient(180deg, rgba(84, 177, 240, 0.80) 21.25%, rgba(231, 199, 32, 0.80) 100%);
+    transition: ease 0.3s;
+}
+.Zzielbilder{
+    margin-left: 91px;
+    margin-top: 47px;
+}
+.Zzieletitel{
+    font-size: 45px;
+    text-align: center;
+    margin: 20px 0px 8px 0px;
+}
+.Zzieletext{
+    font-size: 27px;
+    text-align: center;
+    margin: 0px 24px 50px 24px;
+}
+/*cardsstyles end*/
+
+/*cardshover begin*/
+.Zzielkarten:hover{
+    background: linear-gradient(180deg, rgba(84, 177, 240, 1.0) 21.25%, rgba(231, 199, 32, 1.0) 100%);
+    box-shadow: 0px 0px 20px 20px rgba(0.25, 0.25, 0.25, 0.25);
+}
+/*cardshover end*/
+
+@media (min-width: 1251px) {
+    /*cardsflex begin*/
+    #Zziele{
+        display: flex;
+        margin-top: 80px;
+    }
+    .Zmidspace{
+        width: 300px;
+        flex-shrink: 1;
+    }
+    .Zouterspace {
+        width: 600px;
+        flex-shrink: 1;
+    }
+    .Zzielkarten{
+        flex-shrink: 0;
+    }
+    /*cardsflex end*/
+
+    /*zieleflex begin*/
+    #ZoutFlex{
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        width: 100%;
+    }
+    #ZFlex{
+        display: flex;
+        z-index: 1;
+    }
+    #ZFholder{
+        flex-basis: 800px;
+        min-width: 100px;
+        flex-shrink: 1;
+    }
+    #Z1circle{
+        width: 410px;
+        margin-top: 340px;
+    }
+    #Z2circle{
+        width: 720px;
+        margin-top: 55px;
+    }
+    /*zieleflex end*/
+}
+
+
+
+@media (max-width: 1251px) {
+    #Zbackground{
+        display: inline-block;
+        height: auto;
+    }
+
+    /*cardsflex begin*/
+    #Zziele{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Zmidspace{
+        flex-basis: 30px;
+    }
+    .Zouterspace {
+        flex-basis: 70px;
+    }
+    /*cardsflex end*/
+
+    /*background begin*/
+
+    #Z1circle{
+        width: 350px;
+        top: 340px;
+        left: 0px;
+        position: absolute;
+    }
+    #Z2circle{
+        width: 720px;
+        top: 1050px;
+        right: 0px;
+        position: absolute;
+    }
+    /*background end*/
+}
+/*ziele end*/
+
+
+
+/*kenntnisse begin*/
+
+#Kbackground{
+    width: 100%;
+    height: 1024px;
+    background-color: #EEEEEE;
+    position: relative;
+}
+
+.Kkarten{
+    width: 284px;
+    height: 284px;
+    position: relative;
+    z-index: 2;
+    transition: ease 0.5s;
+    border-radius: 40px;
+    background: #3B96D3;
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*kartenstyles*/
+.KLimages{
+    margin-left: 45px;
+}
+.KRimages{
+    position: absolute;
+    right: 45px;
+    top: 75px;
+}
+.KLlongtexts{
+    right: 25px;
+}
+.KRlongtexts{
+    left: 25px;
+}
+
+.KKtexts{
+    font-size: 45px;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+.KKlongtexts{
+    position: absolute;
+    width: 324px;
+    height: 242px;
+    top: 23px;
+    display: none;
+}
+/*kartenstyles*/
+
+/*titlemarginsLR begin*/
+.KLdesign{
+    margin-left: 77px;
+}
+.KRfigma{
+    position: absolute;
+    right: 84px;
+}
+.KLhtml{
+    margin-left: 88px;
+}
+.KRcss{
+    position: absolute;
+    right: 106px;
+}
+.KLvscode{
+    margin-left: 67px;
+}
+.KRjavascr{
+    position: absolute;
+    right: 44px;
+}
+/*titlemarginsLR end*/
+
+/*grid and hover*/
+@media (min-width: 1195px) {
+    .Kkarten:hover{
+        width: 613px;
+        z-index: 3;
+        .KKlongtexts {
+            opacity: 1;
+            display: flex;
+        }
+    }
+    .KRkarten:hover {
+        transform: translateX(-329px);
+    }
+}
+
+.Kkenntnisse{
+    display: grid;
+    gap: 45px;
+    grid-template-columns: 284px 284px;
+    grid-template-rows: 284px 284px 284px;
+    margin-left: 45px;
+    margin-bottom: 45px;
+}
+/*grid and hover*/
+
+/*meinekenntnisse begin*/
+#Kcirclesbg{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+.Kmeinekenntnisse{
+    position: absolute;
+    top: 190px;
+    left: 548px;
+}
+#Kkenntnistext{
+    position: absolute;
+    text-align: center;
+    top: 318px;
+    left: 602px;
+    width: 311px;
+    height: 180px;
+}
+/*meinekenntnisse end*/
+
+/*fragenkenntnisse begin*/
+#Kcirclesbg2{
+    position: absolute;
+    z-index: 1;
+    top: 650px;
+    right: 0px;
+}
+#Kmailmirbg{
+    position: absolute;
+    top: 402px;
+    left: 182px;
+}
+
+#Kkenntnisimg{
+    z-index: 1;
+}
+.KTkenntnisfragen{
+    position: absolute;
+    width: 375px;
+    text-align: center;
+    top: 102px;
+    left: 95px;
+}
+.KTmailmir{
+    position: absolute;
+    top: 53px;
+    left: 70px;
+    transform: rotate(-9.341deg);
+}
+#KBmailmir{
+    background: transparent;
+    border: 0px;
+}
+#Kcircles2holder{
+    width: 100%;
+    height: 5px;
+}
+/*fragenkenntnisse end*/
+
+@media(max-width: 1195px){
+    #Kbackground{
+        display: inline-block;
+        height: auto;
+    }
+    .Kkenntnisse{
+        grid-template-columns: 284px;
+        grid-template-rows: auto;
+    }
+    #Kcirclesbg2 {
+        top: 1100px;
+    }
+
+    /*hoverdown begin*/
+    .Kkarten:hover{
+        height: 613px;
+        .KKlongtexts {
+            opacity: 1;
+            display: flex;
+            top: 284px;
+            left: 17px;
+            right: 17px;
+            width: 250px;
+            height: 320px;
+        }
+    }
+    /*hoverdown end*/
+}
+
+@media (max-width: 860px) {
+    .Kkenntnisse{
+        margin-top: 640px;
+        margin-left: 0px;
+        grid-template-columns: 100%;
+        place-items: center;
+    }
+    /*fragenkenntnisse begin*/
+    #Kcirclesbg2{
+        position: relative;
+        top: 20px;
+        overflow: hidden;
+    }
+    /*fragenkenntnisse end*/
+}
+
+/*kenntnisse end*/
+
+
+
+/*Kontakt begin*/
+
+#Xbackground{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 535px;
+    background-color: #B2AEAE;
+}
+.Xkontakt{
+    padding-top: 65px;
+    margin-left: 170px;
+    margin-bottom: 35px;
+}
+
+/*kontakttel begin*/
+#Xtelefon{
+    display: flex;
+    align-items: center;
+}
+
+#Xtelefonimg{
+    margin-left: 170px;
+    margin-right: 20px;
+}
+.XKtext{
+    margin-bottom: 0px;
+}
+/*kontakttel end*/
+
+/*kontaktmail begin*/
+#Xmail{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#Xmailimg{
+    margin-left: 170px;
+    margin-right: 20px;
+}
+.XKtext{
+    margin-bottom: 0px;
+}
+/*kontaktmail end*/
+
+/*kontaktend begin*/
+#Xkontaktpossi{
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+.XkontaktAt{
+    margin-left: 170px;
+}
+#Xkontaktwhatsappimg{
+    margin-right: 100px;
+}
+#Xkontakttelimg{
+    margin-right: 30px;
+}
+#Xkontaktmailimg{
+    margin-right: 30px;
+}
+#Xkontaktholder{
+    width: 1000px;
+    flex-shrink: 1;
+}
+
+@media(max-width: 1195px) {
+    .XkontaktAt {
+        margin-left: 0px;
+    }
+}
+@media(max-width: 870px) {
+    #Xbackground{
+        display: inline-block;
+        height: auto;
+    }
+    .Xkontakt{
+        margin-left: 0px;
+    }
+    #Xtelefonimg{
+        margin-left: 0px;
+    }
+    #Xmailimg{
+        margin-left: 0px;
+    }
+
+    #Xkontaktpossi{
+        flex-wrap: wrap;
+    }
+    #Xkontaktholder{
+    width: 200px;
+    flex-shrink: 0;
+    }
+}
+
+@media(max-width: 624px) {
+    #Xkontaktholder{
+        width: 0px;
+    }
+}
+/*Kontaktend end*/
